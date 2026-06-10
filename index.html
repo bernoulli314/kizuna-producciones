@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel - Dashboard</title>
+
+  <!-- Enlaza el CSS COMPILADO de tu main.scss. No escribas estilos aqui. -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+      <div class="sidebar__logo">DataPanel</div>
+      <nav class="sidebar__nav">
+        <a href="#" class="sidebar__link sidebar__link--activo">Resumen</a>
+        <a href="#" class="sidebar__link">Ventas</a>
+        <a href="#" class="sidebar__link">Usuarios</a>
+        <a href="#" class="sidebar__link">Ajustes</a>
+      </nav>
+    </aside>
+
+    <!-- ============ CONTENIDO ============ -->
+    <main class="contenido">
+
+      <!-- Topbar -->
+      <header class="topbar">
+        <h1 class="topbar__titulo">Resumen general</h1>
+        <div class="topbar__acciones">
+          <button class="boton boton--secundario">Exportar</button>
+          <button class="boton boton--primario">+ Nuevo</button>
+        </div>
+      </header>
+
+      <!-- Tarjetas de estadisticas -->
+      <section class="stats">
+        <article class="stat">
+          <p class="stat__label">Ingresos</p>
+          <p class="stat__valor">$12.4k</p>
+          <span class="badge badge--exito">+8%</span>
+        </article>
+        <article class="stat">
+          <p class="stat__label">Usuarios</p>
+          <p class="stat__valor">3,210</p>
+          <span class="badge badge--exito">+3%</span>
+        </article>
+
+        <article class="stat">
+          <p class="stat__label">Pedidos</p>
+          <p class="stat__valor">847</p>
+          <span class="badge badge--alerta">0%</span>
+        </article>
+
+        <article class="stat">
+          <p class="stat__label">Cancelaciones</p>
+          <p class="stat__valor">23</p>
+          <span class="badge badge--error">-5%</span>
+        </article>
+
+        <article class="stat">
+          <p class="stat__label">Cancelaciones</p>
+          <p class="stat__valor">23</p>
+          <span class="badge badge--error">-5%</span>
+        </article>
+        
+      </section>
+
+      <!-- Panel con tabla -->
+      <section class="panel">
+        <h2 class="panel__titulo">Ultimos pedidos</h2>
+        <table class="tabla">
+          <thead>
+            <tr>
+              <th class="tabla__th">Cliente</th>
+              <th class="tabla__th">Monto</th>
+              <th class="tabla__th">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tabla__fila">
+              <td class="tabla__td">Ana Perez</td>
+              <td class="tabla__td">$120</td>
+              <td class="tabla__td"><span class="badge badge--exito">Pagado</span></td>
+            </tr>
+            <tr class="tabla__fila">
+              <td class="tabla__td">Luis Gomez</td>
+              <td class="tabla__td">$80</td>
+              <td class="tabla__td"><span class="badge badge--alerta">Pendiente</span></td>
+            </tr>
+            <tr class="tabla__fila">
+              <td class="tabla__td">Marta Ruiz</td>
+              <td class="tabla__td">$0</td>
+              <td class="tabla__td"><span class="badge badge--error">Cancelado</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ZONA DE PERSONALIZACION:
+           agrega UNA seccion/widget nuevo inventado por ti
+           (ej: "Actividad reciente", "Grafico", "Notas", "Tareas"). -->
+
+    </main>
+  </div>
+
+</body>
+</html>

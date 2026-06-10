@@ -1,0 +1,14 @@
+// archivo: scss/main.scss
+// El main SOLO reune los partials con @use. Compila SOLO este archivo.
+@use 'components/boton';
+@use 'components/stat';
+@use 'components/badge';
+
+@use 'base/base';
+
+@use 'layout/layout';
+@use 'layout/sidebar';
+@use 'layout/contenido';
+@use 'layout/topbar';
+@use 'layout/stats';
+@use 'layout/panel';

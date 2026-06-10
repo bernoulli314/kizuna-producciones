@@ -1,0 +1,21 @@
+// archivo: scss/abstracts/_mixins.scss
+// Mixin con argumento: recibe el color de fondo y arma el boton.
+
+@mixin boton($fondo) {
+  background: $fondo;
+  color: white;
+  border: 0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  &:hover{
+        opacity:.8;
+        transform:scale(1.05);
+        font-weight:bold;
+    }
+
+
+}

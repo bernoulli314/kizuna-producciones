@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as v;
+
+.sidebar{
+    background:v.$color-primario;
+    border-radius: v.$radio;
+
+    &__logo{
+        font-size:2rem;
+        font-weight:bold;
+        padding:20px 10px;
+        color: v.$color-secundario;
+
+
+    }
+
+    &__nav{
+        font-size:1rem;
+        display:flex;
+        flex-direction:column;
+        padding:10px 10px;
+        gap:10px;
+    }
+
+    &__link{
+        color: v.$color-texto;
+        text-decoration:none;
+        padding:5px 10px;
+        border:2px solid v.$color-primario;
+
+        &:hover{
+            opacity:.9;
+            border:2px solid;
+            border-radius: v.$radio;
+            border-color: v.$color-secundario;
+        }
+    }
+
+    &__link--activo{
+        font-weight:bold;
+        background-color:v.$color-secundario;
+        border-radius: v.$radio;
+        padding:5px 10px;
+    }
+}
