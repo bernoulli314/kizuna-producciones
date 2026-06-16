@@ -1,5 +1,4 @@
-// archivo: scss/abstracts/_mixins.scss
-// Mixin con argumento: recibe el color de fondo y arma el boton.
+@use '../abstracts/variables' as v;
 
 @mixin boton($fondo) {
   background: $fondo;
@@ -17,5 +16,16 @@
         font-weight:bold;
     }
 
+
+}
+
+@mixin titulo-seccion {
+
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:1rem;
+
+    position:relative;
+    z-index:1;
 
 }

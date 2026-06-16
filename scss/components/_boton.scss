@@ -1,9 +1,7 @@
-// archivo: scss/components/_boton.scss
-// Trae las variables y el mixin con @use (namespace v. y m.)
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
 .boton {
-  @include m.boton(v.$color-primario);          // boton primario (azul)
+  @include m.boton(v.$color-secundario);          // boton primario (azul)
   &--secundario { @include m.boton(v.$color-secundario); }   // variante con &
 }

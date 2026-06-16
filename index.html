@@ -1,110 +1,392 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panel - Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIZUNA Producciones</title>
 
-  <!-- Enlaza el CSS COMPILADO de tu main.scss. No escribas estilos aqui. -->
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <div class="layout">
+    <div class="layout">
 
-    <!-- ============ SIDEBAR ============ -->
-    <aside class="sidebar">
-      <div class="sidebar__logo">DataPanel</div>
-      <nav class="sidebar__nav">
-        <a href="#" class="sidebar__link sidebar__link--activo">Resumen</a>
-        <a href="#" class="sidebar__link">Ventas</a>
-        <a href="#" class="sidebar__link">Usuarios</a>
-        <a href="#" class="sidebar__link">Ajustes</a>
-      </nav>
-    </aside>
+        <!-- HEADER -->
+        <header class="header">
 
-    <!-- ============ CONTENIDO ============ -->
-    <main class="contenido">
+            <div class="header__logo">
+                <img
+                    src="img/logo-kizuna.svg"
+                    alt="Logo KIZUNA Producciones"
+                    class="header__logo-img">
+            </div>
 
-      <!-- Topbar -->
-      <header class="topbar">
-        <h1 class="topbar__titulo">Resumen general</h1>
-        <div class="topbar__acciones">
-          <button class="boton boton--secundario">Exportar</button>
-          <button class="boton boton--primario">+ Nuevo</button>
-        </div>
-      </header>
+            <nav class="header__nav">
+                <a href="#inicio" class="header__link">INICIO</a>
+                <a href="#eventos" class="header__link">NUESTROS EVENTOS</a>
+                <a href="#fechas" class="header__link">PRÓXIMAS FECHAS</a>
+                <a href="#nosotros" class="header__link">SOBRE NOSOTROS</a>
+                <a href="#contacto" class="header__link">CONTÁCTANOS</a>
+            </nav>
 
-      <!-- Tarjetas de estadisticas -->
-      <section class="stats">
-        <article class="stat">
-          <p class="stat__label">Ingresos</p>
-          <p class="stat__valor">$12.4k</p>
-          <span class="badge badge--exito">+8%</span>
-        </article>
-        <article class="stat">
-          <p class="stat__label">Usuarios</p>
-          <p class="stat__valor">3,210</p>
-          <span class="badge badge--exito">+3%</span>
-        </article>
+        </header>
 
-        <article class="stat">
-          <p class="stat__label">Pedidos</p>
-          <p class="stat__valor">847</p>
-          <span class="badge badge--alerta">0%</span>
-        </article>
+        <!-- HERO / CARRUSEL -->
+        <section class="carrusel">
 
-        <article class="stat">
-          <p class="stat__label">Cancelaciones</p>
-          <p class="stat__valor">23</p>
-          <span class="badge badge--error">-5%</span>
-        </article>
+            <div class="carrusel__contenedor">
 
-        <article class="stat">
-          <p class="stat__label">Cancelaciones</p>
-          <p class="stat__valor">23</p>
-          <span class="badge badge--error">-5%</span>
-        </article>
-        
-      </section>
+                <div class="carrusel__item carrusel__item--activo carrusel__item--1">
+                    <h1 class="carrusel__titulo">SE NOS VIENE KIZUNA FROST</h1>
+                    <p class="carrusel__descripcion">
+                        Nos vemos el próximo domingo 28 de junio en Espacio El Faro, entradas en PortalTickets. En esta zona ponemos las noticias.
+                    </p>
+                </div>
 
-      <!-- Panel con tabla -->
-      <section class="panel">
-        <h2 class="panel__titulo">Ultimos pedidos</h2>
-        <table class="tabla">
-          <thead>
-            <tr>
-              <th class="tabla__th">Cliente</th>
-              <th class="tabla__th">Monto</th>
-              <th class="tabla__th">Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="tabla__fila">
-              <td class="tabla__td">Ana Perez</td>
-              <td class="tabla__td">$120</td>
-              <td class="tabla__td"><span class="badge badge--exito">Pagado</span></td>
-            </tr>
-            <tr class="tabla__fila">
-              <td class="tabla__td">Luis Gomez</td>
-              <td class="tabla__td">$80</td>
-              <td class="tabla__td"><span class="badge badge--alerta">Pendiente</span></td>
-            </tr>
-            <tr class="tabla__fila">
-              <td class="tabla__td">Marta Ruiz</td>
-              <td class="tabla__td">$0</td>
-              <td class="tabla__td"><span class="badge badge--error">Cancelado</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+                <div class="carrusel__item carrusel__item--2">
+                    <h1 class="carrusel__titulo">KOREANITY</h1>
+                    <p class="carrusel__descripcion">
+                        Lo mejor de la cultura coreana.
+                    </p>
+                </div>
 
-      <!-- ZONA DE PERSONALIZACION:
-           agrega UNA seccion/widget nuevo inventado por ti
-           (ej: "Actividad reciente", "Grafico", "Notas", "Tareas"). -->
+                <div class="carrusel__item carrusel__item--3">
+                    <h1 class="carrusel__titulo">ARTSUKI</h1>
+                    <p class="carrusel__descripcion">
+                        Artistas, ilustradores y creatividad.
+                    </p>
+                </div>
 
-    </main>
-  </div>
+                <div class="carrusel__item carrusel__item--4">
+                    <h1 class="carrusel__titulo">REWINDVERSO</h1>
+                    <p class="carrusel__descripcion">
+                        Nostalgia geek y cultura pop.
+                    </p>
+                </div>
+
+                <div class="carrusel__item carrusel__item--4">
+                    <h1 class="carrusel__titulo">R4</h1>
+                    <p class="carrusel__descripcion">
+                        Tocatas y música en vivo.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="carrusel__nav">
+
+                <button class="carrusel__nav-link">1</button>
+                <button class="carrusel__nav-link">2</button>
+                <button class="carrusel__nav-link">3</button>
+                <button class="carrusel__nav-link">4</button>
+                <button class="carrusel__nav-link">5</button>
+
+            </div>
+
+        </section>
+
+        <!-- EVENTOS -->
+        <section id="eventos" class="eventos">
+
+            <div class="container">
+
+                <h2 class="eventos__titulo">
+                    NUESTROS EVENTOS
+                </h2>
+
+                <div class="eventos__logos">
+
+                    <a href="#" class="eventos__link">
+                        <img
+                            src="img/logo-kizuna.svg"
+                            alt="Logo Kizuna Fest"
+                            class="eventos__logo">
+                    </a>
+
+                    <a href="#" class="eventos__link">
+                        <img
+                            src="img/koreanity.svg"
+                            alt="Logo Koreanity"
+                            class="eventos__logo">
+                    </a>
+
+                    <a href="#" class="eventos__link">
+                        <img
+                            src="img/artsuki.svg"
+                            alt="Logo Artsuki"
+                            class="eventos__logo">
+                    </a>
+
+                    <a href="#" class="eventos__link">
+                        <img
+                            src="img/rewindverso.svg"
+                            alt="Logo Rewindverso"
+                            class="eventos__logo">
+                    </a>
+
+                    <a href="#" class="eventos__link">
+                        <img
+                            src="img/r4.svg"
+                            alt="Logo R4"
+                            class="eventos__logo">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PRÓXIMAS FECHAS -->
+        <section id="fechas" class="fechas">
+
+            <div class="container">
+
+                <h2 class="fechas__titulo">
+                    PRÓXIMAS FECHAS
+                </h2>
+
+                <div class="fechas__flyers">
+
+                    <article class="fechas__fecha">
+
+                        <a href="https://www.portaldisc.com/evento/kizunafestespacioelfaro1" class="fechas__link">
+                            <img
+                                src="img/kzn_2806.png"
+                                alt="Flyer Evento 1"
+                                class="fechas__flyer">
+                        </a>
+
+                        <h3 class="fechas__nombre">
+                            ❄️KIZUNA FROST❄️
+                        </h3>
+
+                        <p class="fechas__descripcion">
+                            Espacio El Faro
+                            28 de Junio de 2026
+                        </p>
+
+                    </article>
+
+                    <article class="fechas__fecha">
+
+                        <a href="https://www.portaldisc.com/evento/kizunafestespacioelfaro1" class="fechas__link">
+                            <img
+                                src="img/kzn_2806.png"
+                                alt="Flyer Evento 2"
+                                class="fechas__flyer">
+                        </a>
+
+                        <h3 class="fechas__nombre">
+                            ❄️KIZUNA FROST❄️
+                        </h3>
+
+                        <p class="fechas__descripcion">
+                            Espacio El Faro
+                            28 de Junio de 2026
+                        </p>
+
+                    </article>
+
+                    <article class="fechas__fecha">
+
+                        <a href="https://www.portaldisc.com/evento/kizunafestespacioelfaro1" class="fechas__link">
+                            <img
+                                src="img/kzn_2806.png"
+                                alt="Flyer Evento 3"
+                                class="fechas__flyer">
+                        </a>
+
+                        <h3 class="fechas__nombre">
+                            ❄️KIZUNA FROST❄️
+                        </h3>
+
+                        <p class="fechas__descripcion">
+                            Espacio El Faro
+                            28 de Junio de 2026
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="nosotros">
+
+            <div class="container">
+
+                <h2 class="nosotros__titulo">
+                    SOBRE NOSOTROS
+                </h2>
+
+                <div class="nosotros__integrantes">
+
+                    <article class="nosotros__integrante">
+
+                        <img
+                            src="img/maki.png"
+                            alt="Integrante del equipo"
+                            class="nosotros__img">
+
+                        <h3 class="nosotros__nombre">
+                            Nombre Integrante
+                        </h3>
+
+                        <p class="nosotros__parrafo">
+                            Descripción breve del integrante.
+                        </p>
+
+                    </article>
+
+                    <article class="nosotros__integrante">
+                        <img
+                            src="img/maki.png"
+                            alt="Integrante del equipo"
+                            class="nosotros__img">
+
+                        <h3 class="nosotros__nombre">
+                            Nombre Integrante
+                        </h3>
+
+                        <p class="nosotros__parrafo">
+                            Descripción breve del integrante.
+                        </p>
+                    </article>
+
+                    <article class="nosotros__integrante">
+                        <img
+                            src="img/maki.png"
+                            alt="Integrante del equipo"
+                            class="nosotros__img">
+
+                        <h3 class="nosotros__nombre">
+                            Nombre Integrante
+                        </h3>
+
+                        <p class="nosotros__parrafo">
+                            Descripción breve del integrante.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contactanos">
+
+            <div class="container">
+
+                <h2 class="contactanos__titulo">
+                    CONTÁCTANOS
+                </h2>
+
+                <form class="contactanos__form">
+
+                    <div class="contactanos__info">
+
+                        <input
+                            type="text"
+                            class="contactanos__input"
+                            placeholder="Nombre">
+
+                        <input
+                            type="text"
+                            class="contactanos__input"
+                            placeholder="Asunto">
+
+                        <input
+                            type="email"
+                            class="contactanos__input"
+                            placeholder="Correo Electrónico">
+
+                        <input
+                            type="tel"
+                            class="contactanos__input"
+                            placeholder="Celular">
+
+                    </div>
+
+                    <div class="contactanos__mensaje">
+
+                        <textarea
+                            class="contactanos__input contactanos__input--mensaje"
+                            placeholder="Escribe tu mensaje">
+                        </textarea>
+
+                        <button class="boton boton--enviar" type="submit">
+                            Enviar Mensaje
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- INFO FINAL -->
+        <section class="infofinal">
+
+            <div class="container">
+
+                <div class="infofinal__logo">
+
+                    <img
+                        src="img/logo-kizuna.svg"
+                        alt="Logo KIZUNA"
+                        class="infofinal__logo-img">
+
+                </div>
+
+                <div class="infofinal__enlaces">
+
+                    <h3 class="infofinal__titulo">
+                        ENLACES
+                    </h3>
+
+                    <a href="#inicio" class="infofinal__link">Inicio</a>
+                    <a href="#eventos" class="infofinal__link">Eventos</a>
+                    <a href="#fechas" class="infofinal__link">Próximas Fechas</a>
+                    <a href="#contacto" class="infofinal__link">Contacto</a>
+
+                </div>
+
+                <div class="infofinal__redes">
+
+                    <h3 class="infofinal__titulo">
+                        NUESTRAS REDES
+                    </h3>
+
+                    <a href="https://www.instagram.com/kizunafest.cl/" class="infofinal__red">Instagram</a>
+                    <a href="https://www.tiktok.com/@kizunafest.cl" class="infofinal__red">TikTok</a>
+                    <a href="https://www.youtube.com/@KIZUNAFEST" class="infofinal__red">YouTube</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <p class="footer__texto">
+                © 2026 KIZUNA Producciones · Todos los derechos reservados.
+            </p>
+
+        </footer>
+
+    </div>
+
+<script src="js/carrusel.js"></script>
 
 </body>
 </html>
